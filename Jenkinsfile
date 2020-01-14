@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("ciscoios/train-schedule")
+                    app = docker.build("iptcp/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
